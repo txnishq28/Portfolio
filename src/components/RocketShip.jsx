@@ -1,0 +1,97 @@
+import React, { useRef } from "react"
+import { useGLTF, useAnimations } from "@react-three/drei"
+
+export function RocketShip(props) {
+  const group = useRef()
+  const { nodes, materials, animations } = useGLTF("/models/rocket_ship.glb")
+  useAnimations(animations, group)
+
+  return (
+    <group ref={group} {...props} dispose={null}>
+      <group name="Sketchfab_Scene">
+        <group
+          name="Sketchfab_model"
+          position={[0, 0, 0]} // reset to origin
+          rotation={[0, 0, 0]} // reset rotation
+          scale={0.01} // default scale so it's not huge
+        >
+          <group
+            name="c51ca569e8164c7a9693e3f67dc1dff9fbx"
+            rotation={[Math.PI / 2, 0, 0]}
+          >
+            <group name="Object_2">
+              <group name="RootNode">
+                <group
+                  name="Cone001"
+                  position={[0, 207.268, 0]}
+                  rotation={[-Math.PI / 2, 0, 0]}
+                >
+                  <mesh
+                    name="Cone001_01_-_Default_0"
+                    castShadow
+                    receiveShadow
+                    geometry={nodes["Cone001_01_-_Default_0"].geometry}
+                    material={materials["01_-_Default"]}
+                  />
+                  <mesh
+                    name="Cone001_02_-_Default_0"
+                    castShadow
+                    receiveShadow
+                    geometry={nodes["Cone001_02_-_Default_0"].geometry}
+                    material={materials["02_-_Default"]}
+                  />
+                  <mesh
+                    name="Cone001_03_-_Default_0"
+                    castShadow
+                    receiveShadow
+                    geometry={nodes["Cone001_03_-_Default_0"].geometry}
+                    material={materials["03_-_Default"]}
+                  />
+                  <mesh
+                    name="Cone001_07_-_Default_0"
+                    castShadow
+                    receiveShadow
+                    geometry={nodes["Cone001_07_-_Default_0"].geometry}
+                    material={materials["07_-_Default"]}
+                  />
+                  <mesh
+                    name="Cone001_09_-_Default_0"
+                    castShadow
+                    receiveShadow
+                    geometry={nodes["Cone001_09_-_Default_0"].geometry}
+                    material={materials["09_-_Default"]}
+                  />
+                  <mesh
+                    name="Cone001_08_-_Default_0"
+                    castShadow
+                    receiveShadow
+                    geometry={nodes["Cone001_08_-_Default_0"].geometry}
+                    material={materials["08_-_Default"]}
+                  />
+                </group>
+                <group name="Birth_001" rotation={[-Math.PI / 2, 0, 0]} />
+                <group name="Position_Icon_001" rotation={[-Math.PI / 2, 0, 0]} />
+                <group name="Speed_001" rotation={[-Math.PI / 2, 0, 0]} />
+                <group name="Rotation_001" rotation={[-Math.PI / 2, 0, 0]} />
+                <group name="Shape_001" rotation={[-Math.PI / 2, 0, 0]} />
+                <group name="Render_001" rotation={[-Math.PI / 2, 0, 0]} />
+                <group name="Display_001" rotation={[-Math.PI / 2, 0, 0]} />
+                <group name="Event_001" rotation={[-Math.PI / 2, 0, 0]} />
+                <group name="Event_002" rotation={[-Math.PI / 2, 0, 0]} />
+                <group name="Display_002" rotation={[-Math.PI / 2, 0, 0]} />
+                <group
+                  name="Spray002"
+                  position={[-0.808, 51.395, 0.287]}
+                  rotation={[-Math.PI / 2, 0, 0]}
+                  scale={[0.488, 0.251, 1.535]}
+                />
+              </group>
+            </group>
+          </group>
+        </group>
+      </group>
+    </group>
+  )
+}
+
+useGLTF.preload("/models/rocket_ship.glb")

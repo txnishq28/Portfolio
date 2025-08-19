@@ -23,6 +23,11 @@ function Navigation() {
           Contact
         </a>
       </li>
+      <li className="nav-li">
+        <a className="nav-link" href="https://drive.google.com/file/d/1JqA_FO41CYAS2q0EFCk4JvfTwgZgwz0X/view?usp=sharing">
+          Resume
+        </a>
+      </li>
     </ul>
   );
 }
