@@ -26,8 +26,8 @@ const Hero = () => {
     <pointLight position={[-5, -5, -5]} intensity={0.6} />
 
     <SciFiWorker
-      scale={isMobile ? 0.81 : 2}
-      position={isMobile ? [0, -2.3, 0] : [-0.5, -4.3, -4.5]}
+      scale={isMobile ? 0.77 : 2}
+      position={isMobile ? [-1, -1.6, 0] : [-0.5, -4.3, -4.5]}
       rotation={[-1.9, 3.07, 3]} 
     />
 
