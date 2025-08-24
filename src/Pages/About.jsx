@@ -11,19 +11,20 @@ const About = () => {
       <h2 className="text-heading">About Me</h2>
       <div className="grid grid-cols-1 gap-4 md:grid-cols-6 md:auto-rows-[18rem] mt-12">
         {/* Grid 1 */}
-        <div className="flex items-end grid-default-color grid-1">
-          <img
-            src="assets/pic1.png"
-            className="absolute scale-[1.1] -right-[16rem] -top-[4rem] md:scale-[3] md:left-50 md:inset-y-10 lg:scale-[2.5]"
-          />
-          <div className="z-10">
-            <p className="headtext">Hello , I am Tanishq Tiwari</p>
-            <p className="subtext">
-            a passionate Software Developer from India. I specialize in building secure, scalable, and high-performance web applications.
-            </p>
-          </div>
-          <div className="absolute inset-x-0 pointer-evets-none -bottom-4 h-1/2 sm:h-1/3 bg-gradient-to-t from-indigo" />
-        </div>
+       <div
+  className="flex items-end grid-default-color grid-1 relative bg-no-repeat bg-cover bg-center"
+  style={{ backgroundImage: "url('assets/pic1.png')" }}
+>
+  <div className="z-10 p-6">
+    <p className="headtext">Hello , I am Tanishq Tiwari</p>
+    <p className="subtext">
+      a passionate Software Developer from India. I specialize in building secure,
+      scalable, and high-performance web applications.
+    </p>
+  </div>
+
+  <div className="absolute inset-x-0 pointer-events-none -bottom-4 h-1/2 sm:h-1/3 bg-gradient-to-t from-indigo" />
+</div>
         {/* Grid 2 */}
         <div className="grid-default-color grid-2">
           <div
@@ -34,8 +35,8 @@ const About = () => {
               Experience
             </p>
             <Card
-              style={{ rotate: "15deg", top: "30%", left: "20%" }}
-              text="SDE Intern (DRDO)"
+              style={{ rotate: "15deg", top: "55%", left: "10%" }}
+              text="SDE Intern (CFEES - DRDO)"
               containerRef={grid2Container}
             />
             <Card
@@ -43,7 +44,11 @@ const About = () => {
               text="Data Science Intern (Rinex.Ai) "
               containerRef={grid2Container}
             />
-            
+            <Card
+              style={{ rotate: "0deg", top: "10%", left: "40%" }}
+              text="Data Analyst Intern (Afame) "
+              containerRef={grid2Container}
+            />            
         
           </div>
         </div>

@@ -1,7 +1,7 @@
 import { Canvas, useFrame } from "@react-three/fiber";
 import HeroText from "../components/HeroText";
 import ParallaxBackground from "../components/ParallaxBackground";
-import { RocketShip } from "../components/RocketShip";
+import { SciFiWorker } from "../components/Animated";
 import { Float } from "@react-three/drei";
 import { useMediaQuery } from "react-responsive";
 import { easing } from "maath";
@@ -18,18 +18,24 @@ const Hero = () => {
         className="absolute inset-0"
         style={{ width: "100vw", height: "100vh" }}
       >
-        <Canvas camera={{ position: [0, 1, 3] }}>
-          <Suspense fallback={<Loader />}>
+        <Canvas camera={{ position: [1, 1, 3], fov: 45 }}>
+  <Suspense fallback={<Loader />}>
+    {/* Add lights */}
+    <ambientLight intensity={0.6} />
+    <directionalLight position={[1, 8, 7]} intensity={2.5} />
+    <pointLight position={[-5, -5, -5]} intensity={0.6} />
 
-            <RocketShip
-                scale={isMobile ? 0.81 : 0.55}
-                position={isMobile ? [0, -2.3, 0] : [0, -0.5, 0]} // closer to text
-                rotation={[20, 22, 0]} 
-            />
+    <SciFiWorker
+      scale={isMobile ? 0.81 : 2}
+      position={isMobile ? [0, -2.3, 0] : [-0.5, -4.3, -4.5]}
+      rotation={[-1.9, 3.07, 3]} 
+    />
 
-            <Rig />
-          </Suspense>
-        </Canvas>
+    <Rig />
+  </Suspense>
+</Canvas>
+
+
       </figure>
     </section>
   );
