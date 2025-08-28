@@ -64,7 +64,7 @@ export const myProjects = [
   },
  {
   id: 4,
-  title: "Full Stack MERN AI Image Generation App",
+  title: "ImagiX -Full Stack MERN AI Image Generation App",
   description:
     "A prompt-based AI image generator with gallery, downloads, and sharing—built on the MERN stack with a modern UI.",
   subDescription: [
@@ -73,7 +73,7 @@ export const myProjects = [
     "Created a gallery with infinite scroll, search, favorites, and per-image detail view.",
     "Stored images and metadata, supporting share/download and copy prompt.",
   ],
-  href: "",            // live URL if deployed
+  href: "https://imagix-ai.vercel.app/",            
   logo: "",
   image: "/assets/projects/AI-gen.png",
   tags: [
