@@ -29,7 +29,7 @@ function Navigation() {
         </a>
       </li>
       <li className="nav-li">
-        <a className="nav-link" href="https://drive.google.com/file/d/1JqA_FO41CYAS2q0EFCk4JvfTwgZgwz0X/view?usp=sharing">
+        <a className="nav-link" href="https://drive.google.com/file/d/1W1rY7EOhBAZbb1DGfbyApA9YWHSbmTH1/view?usp=sharing">
           Resume
         </a>
       </li>
