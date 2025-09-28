@@ -134,6 +134,15 @@ export const myProjects = [
 
 export const experiences = [
   {
+    title: "Software Engineer Trainee",
+    job: "TSP – The Silicon Partners , Noida",
+    date: "Sept 2025 – Present",
+    contents: [
+      "Working on SAP Integration Suite and UI frameworks focusing on APIs, cloud, and scripting to improve reliability and performance of large-scale systems.",
+      "Collaborated with cross-functional teams to streamline workflows, ensuring low-latency and fault-tolerant integrations for enterprise applications.",
+    ],
+  },
+  {
     title: "Software Development Intern",
     job: "CFEES-DRDO, Delhi",
     date: "July 2024 – September 2024",
