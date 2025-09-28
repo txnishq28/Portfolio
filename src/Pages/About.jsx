@@ -35,6 +35,11 @@ const About = () => {
               Experience
             </p>
             <Card
+              style={{ rotate: "-15deg", top: "15%", left: "10%" }}
+              text="Software Engineer (The Silicon Partners)"
+              containerRef={grid2Container}
+            />
+            <Card
               style={{ rotate: "15deg", top: "55%", left: "10%" }}
               text="SDE Intern (CFEES - DRDO)"
               containerRef={grid2Container}
@@ -45,7 +50,7 @@ const About = () => {
               containerRef={grid2Container}
             />
             <Card
-              style={{ rotate: "0deg", top: "10%", left: "40%" }}
+              style={{ rotate: "15deg", top: "15%", left: "40%" }}
               text="Data Analyst Intern (Afame) "
               containerRef={grid2Container}
             />            
