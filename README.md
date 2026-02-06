@@ -1,16 +1,16 @@
-Portfolio
+#Portfolio
 A personal portfolio repository by txnishq28, designed to showcase professional skills, projects, and achievements. The portfolio provides an interactive, visually appealing, and responsive web interface that highlights work experience, technical expertise, and personal accomplishments. It serves as a digital resume and project showcase for potential employers, collaborators, and the broader tech community. You can view the live site at https://3d-tanishq-portfolio.vercel.app/.
 
-Introduction
+#Introduction
 This repository contains a modern portfolio website built to help software developers and professionals present their skills and projects online. The site features a clean user interface, dynamic content, and easy navigation. It is ideal for demonstrating technical proficiency, creative projects, and personal branding in a single platform. The portfolio supports mobile and desktop devices, ensuring accessibility and a great user experience.
 
 <img width="1896" height="916" alt="image" src="https://github.com/user-attachments/assets/390e7731-8686-45cf-97f8-9980d371cd75" />
 
 
-Configuration
+#Configuration
 Follow these steps to set up and run the portfolio on your local machine or deploy it online:
 
-Prerequisites
+#Prerequisites
 Node.js (version 14 or higher recommended)
 npm or yarn package manager
 Installation
@@ -21,23 +21,23 @@ cd Portfolio
 Install dependencies:
 
 npm install
-# or
+or
 yarn install
 Development server: Start the local development server to view changes live.
 
 npm start
-# or
+or
 yarn start
 Build for production: Generate a production-ready build.
 
 npm run build
-# or
+or
 yarn build
 Customization
 Edit configuration files (e.g., config.js, .env, or similar) to personalize your name, contact information, project data, and social media links.
 Update assets in the public or src/assets directories for custom images, logos, and icons.
 Adjust color themes, fonts, and layout in the CSS or theme configuration files to match your personal branding.
-Features
+#Features
 The portfolio includes a robust set of features aimed at providing a comprehensive showcase of your professional profile:
 
 Responsive Design: Adapts seamlessly to different screen sizes, ensuring a consistent look on all devices.
@@ -57,7 +57,7 @@ The portfolio follows a component-based architecture, making it easy to extend a
 
 This structure promotes modularity and reusability, allowing you to add or update sections as needed.
 
-Deployment
+#Deployment
 Deploy your portfolio online with minimal effort. Common deployment platforms include:
 
 GitHub Pages: Direct integration for static sites.
@@ -67,10 +67,10 @@ Custom Hosting: Upload the build folder to your preferred web host.
 Contribution
 Feel free to fork the repository and submit pull requests to improve features, fix bugs, or submit enhancements. When contributing, please adhere to the code style and include clear commit messages describing your changes.
 
-License
+#License
 This project is licensed under the MIT License, allowing open use, modification, and distribution with proper attribution.
 
-Contact
+#Contact
 For questions, feedback, or collaboration opportunities, please use the contact form on the site or reach out via any linked social media profiles.
 
 Thank you for visiting and considering this portfolio as a template or inspiration for your own professional website!
