@@ -183,7 +183,7 @@ export const mySocials = [
   {
     name: "LinkedIn",
     href: "https://www.linkedin.com/in/tanishq-tiwari-0193702b9/",
-    icon: "/assets/socials/linkedin.svg",
+    icon: "/assets/socials/icons8-linkedin-2-50.png",
   },
   {
     name: "LeetCode",
