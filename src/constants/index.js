@@ -193,7 +193,7 @@ export const mySocials = [
   {
     name: "Email",
     href: "mailto:tanishq.tiwari2812@gmail.com",
-    icon: "/assets/socials/email.png",
+    icon: "/assets/socials/email_12868600.png",
   },
 ];
 
